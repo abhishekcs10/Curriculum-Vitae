@@ -1,0 +1,276 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.2 (25/3/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{comment}
+\usepackage[scale=0.85]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Abhishek} % Your first name
+\familyname{Tiwari} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+%\title{Curriculum Vitae}
+\address{422/75 B, Tope Darwaza,\\ Chaupatiyan Road\\}{Lucknow, Uttar Pradesh 226003}
+\mobile{7479024291}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{erabhishektiwarics@gmail.com}
+\homepage{www.abhishekcs10.github.io
+}{abhishekcs10.github.io} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+% \extrainfo{Roll No - 15IT60R17\\ (IIT Kharagpur)}
+\photo[70pt][0.1pt]{Abhishek_photo} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+\begin{comment}
+
+\end{}
+% To remove the cover letter, comment out this entire block
+
+\clearpage
+
+\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+\date{\today} % Letter date
+\opening{Dear Sir or Madam,} % Opening greeting
+\closing{Sincerely yours,} % Closing phrase
+\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+\makelettertitle % Print letter title
+
+\lipsum[1-3] % Dummy text
+
+\makeletterclosing % Print letter signature
+
+\newpage
+\end{comment}
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+
+\section{Experience}
+\cvitem{Position}{Senior Software Developer at \textbf{Samsung R\&D Institute, Bangalore}  (June'18-Present)} 
+\cvitem{Field}{ 5G-Non Access Stratum}
+\cvitem{Description}{Non Access Stratum(NAS) is the upper most layer in the control plane of Mobile Communication protocol. My role is to understand and handle flow of control messages in order to establish a successful connection to core network. It contains different modules like Call Manager, Data Service, Session and Mobility Management etc.}
+
+\cvitem{Position}{Software Development Intern at \textbf{IBM-ISDL} (May'17-July'17)}
+\cvitem{Title}{Optimizing Distributed GPU collectives for Deep Learning workloads}
+\cvitem{Description}{A novel approach towards the design of large scale collective communication algorithms for \textbf{CUDA aware MPI routines} suitable for \textbf{Machine Learning/ Deep Learning} workloads.}
+
+\section{Education}
+
+\cventry{Jul'2016--Apr'2018}{Master of Technology - Computer Science and Engineering}{IIT Kharagpur}{}{\textit{CGPA -- 9.06/10}}{}  % Arguments not required can be left empty
+\cventry{Aug'2011--Mar'2015}{Bachelor of Engineering - Computer Engineering}{SRM College of Engineering}{}{\textit{73.7\%}}{}
+\cventry{Apr'2008--Mar'2010}{Intermediate Certificate}{UP Board of High School \& Intermediate Education }{}{\textit{79.00\%}}{}
+\cventry{Apr'2007--Mar'2008}{High School Certificate}{UP Board of High School \& Intermediate Education}{}{\textit{65.83\%}}{}
+
+\section{Masters Thesis}
+
+\cvitem{Title}{\emph{\textbf{Allocation policies on Multi-core Processor System}}} 
+% \cvitem{}{\emph{}}
+%\cvitem{Supervisors}{Professor James Smith \& Associate Professor Jane Smith}
+\cvitem{Description}{The project aims to find an optimal parallelization policy to maximally exploit power of multi-core processor. Currently the core allocation needs to be explicitly handled by the programmer or the OS does as per its policy. We intend to replace this allocation by OS with a smart allocation policy that does allocation based on the capabilities of the microprocessor. }
+% \cvitem{Phase I}{Build a topical crawler to crawl the web and store geoservers found and their corresponding metadata.}
+% \cvitem{Phase II}{Build a OGC compliant catalog service to publish and search accumulated metadata.}
+% \cvitem{Phase III}{Build Query orchestration service to perform realtime query with heterogeneous data sources and cost matrices associated with
+% them.}
+
+\section{Projects}
+\subsection{At Samsung R\&D Insitute, Bangalore}
+\cvitem{Title}{\emph{\textbf{Debug Screen to display New Radio (NR-5G) related Parameters}}}
+\cvitem{Description}{ This projects aims to display NR related parameters on screen when keystring \textbf{*\#0011\#} is dialed on any Samsung phone}
+
+\subsection{At IIT Kharagpur}
+\cvitem{Title}{\emph{\textbf{Searching Using Natural Language Queries}}}
+\cvitem{Tools}{\emph{Language Tool, QUEPY, Spacy, refo}}
+\cvitem{Description}{The project aims to answer queries of users given in Natural language. It can process queries that matches the grammar defined to match certain type of queries. We used \textbf{Semantic database- DBPedia} to retrieve answer for the query.}
+\newpage
+\cvitem{Title}{\emph{\textbf{Connected Video Lectures}}}
+\cvitem{Tools}{\emph{Gibs LDA, DBPedia Spotlight}}
+\cvitem{Description}{The project aims to identify different topics covered in a video lecture and provide links to different wikipedia pages that are related to that concept.}
+\cvitem{Title}{\emph{\textbf{Calculating QoS drop and impact on Container during Container Migration}}}
+\cvitem{Tools}{\emph{Docker CE, Flocker, Kubernetes}}
+\cvitem{Description} { The objective of project is to measure and compare downtime of a container migration as compared to virtual machine migration in a distributed system environment.}
+
+\cvitem{Title}{\emph{\textbf{Mood Detection using Swiping Pattern}}}
+\cvitem{Description} { Determine the mood of user using swiping pattern on Android. Record the swiping features from keyboard as the user swipes and use these features to determine mood. Features Recorded from Swipe: \textbf{pressure, velocity, duration of swipe}}
+
+\cvitem{Title}{\emph{\textbf{Object Detection in Images}}}
+\cvitem{Description} { Automatically assign tags to images, describing objects identified in image in image using \textbf{Histogram of Oriented Gradient(HoG)} feature.Dataset used is \textbf{VOC07}}
+
+
+
+\section{Coursework Information}
+\cvitem{Courses}{\emph{Machine Learning, Information Retrieval, Language Processing for e-Learning, Cloud Computing, Data Structures and Algorithms, Operating Systems, DBMS, Computing Systems and Networking.}}
+
+\cvitem{Mini-Projects}{\emph{\textbf{1)}Mini bash like Shell \textbf{2)}Movie Recommendation System \textbf{3)}Build Inverted Index in R and Map-Reduce \textbf{4)}Video Streaming using MPEG-DASH  \textbf{5)}Modifying Bitcoin parameters in Regression Testing Mode }}
+
+
+% changed from lead to built, no mention of other people
+\begin{comment}
+
+\end{}
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\subsection{Vocational}
+
+\cventry{2012--Present}{1\textsuperscript{st} Year Analyst}{\textsc{Lehman Brothers}}{Los Angeles}{}{Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (ags, oils, precious and base metals), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping.
+\newline{}\newline{}
+Detailed achievements:
+\begin{itemize}
+\item Learned how to make amazing coffee
+\item Finally determined the reason for \textsc{PC LOAD LETTER}:
+\begin{itemize}
+\item Paper jam
+\item Software issues:
+\begin{itemize}
+\item Word not sending the correct data to printer
+\item Windows trying to print in letter format
+\end{itemize}
+\item Coffee spilled inside printer
+\end{itemize}
+\item Broke the office record for number of kitten pictures in cubicle
+\end{itemize}}
+
+%------------------------------------------------
+
+\cventry{2010--2011}{Summer Intern}{\textsc{Lehman Brothers}}{Los Angeles}{}{Rated "truly distinctive" for Analytical Skills and Teamwork.}
+
+%------------------------------------------------
+
+\subsection{Miscellaneous}
+
+\cventry{2008--2009}{Computer Repair Specialist}{Buy More}{Burbank}{}{Worked in the Nerd Herd and helped to solve computer problems by asking customers to turn their computers off and on again.}
+\end{comment}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+\begin{comment}
+
+
+\section{Awards}
+
+\cvitem{2011}{School of Business Postgraduate Scholarship}
+\cvitem{2010}{Top Achiever Award -- Commerce}
+\end{comment}
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+\cvitem{Language}{ C/C\texttt{++}(Proficient), Scala, Python, SQL, HTML, R, \LaTeX, XML}
+% JSP, JavaScript, CSS, , PHP, Java, R
+\cvitem{Database}{MySQL, PostgreSQL, SQLite}
+% , Oracle, Oracle Spatial
+\cvitem{Software}{ PyCharm, Android Studio, RStudio, Sphinx, Vim phpMyAdmin}
+% actually there is no need to write software.
+\cvitem{Framework}{Apache Spark, AWS, Git, MapReduce, Hadoop, CUDA, MPI}
+
+\section{Achievements and Open Source Contribution}
+\cvitem{\textbf{Samsung-Pro}}{Cleared Samsung Professional Test. Current there are 20\% employees who have cleared this test. }
+\cvitem{\textbf{GATE-2016}}{Secured AIR 191.}
+\cvitem{\href{https://github.com/strace/strace/commits?author=abhishekcs10}{Strace\textbf{v4.17}}}{ \href{https://github.com/strace/strace/commits?author=abhishekcs10}{Added option to trace \textbf{statfs} related system calls. } }
+
+\cvitem{\href{https://github.com/sixin-zh/mpiT/pull/24/commits/6a936f47f6f5ee0eddec069b926a5fe8d6f8ef2a}{mpiT}}{ \href{https://github.com/sixin-zh/mpiT/pull/24/commits/6a936f47f6f5ee0eddec069b926a5fe8d6f8ef2a}{Fixed bug to get MPI working with CUDA support in \textbf{mpiT}.} }
+
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+% removing section courses as it does not contribute much over job experience
+
+% \section{Courses}
+% \begin{comment}
+
+
+% \cvitem{M.Tech}{\textbf{Database Engineering} - given term paper on topic \textit{Content based retrieval from very large Image and Spatial Databases}.}
+% \cvitem{}{\textbf{Data Warehousing \& Data Mining} - given presentation on topic \textit{Partition based clustering algorithms}.}
+
+% \cvitem{}{\textbf{Distributed Systems} - given term paper on topic \textit{Distributed Shortest Path Algorithms}.}
+% \cvitem{}{\textbf{Cloud Computing} - given term paper on topic \textit{Cloud based implementation for Geo\-Crawler}.}
+% \cvitem{}{\textbf{Information Retrieval}}
+% \cvitem{}{\textbf{Geographical Information Systems}}
+% \end{comment}
+% % version 2 of courses.
+% \cvlistdoubleitem{Distributed Systems}{Data Mining}
+% \cvlistdoubleitem{Database Engineering}{Cloud Computing}
+% \cvlistdoubleitem{Information Retrieval}{Geographical Information Systems}
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+\begin{comment}
+
+
+\section{Languages}
+
+\cvitemwithcomment{English}{Mothertongue}{}
+\cvitemwithcomment{Spanish}{Intermediate}{Conversationally fluent}
+\cvitemwithcomment{Dutch}{Basic}{Basic words and phrases only}
+\end{comment}
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+% \section{Interests}
+
+% %\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+% \cvlistdoubleitem{Searching about Technological trends}{Playing Football}
+% \cvlistitem{Running}
+
+%\cvlistitem{Playing Football}
+%\cvlistitem{Running}
+%----------------------------------------------------------------------------------------
+
+\end{document}
